@@ -1,4 +1,4 @@
-package com.github.marcelomachadoxd.crudclientes.motel.entities;
+package com.github.marcelomachadoxd.crudclientes.model.entities;
 
 
 import javax.persistence.*;
