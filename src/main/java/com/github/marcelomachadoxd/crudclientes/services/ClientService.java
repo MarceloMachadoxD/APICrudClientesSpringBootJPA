@@ -32,4 +32,14 @@ public class ClientService {
 
         return list.map(ClientDTO::new);
     }
+
+    @Transactional(readOnly = false)
+    public void deleteClientByID(Long id) {
+        try {
+            clientRepository.deleteById(id);
+        } catch (RuntimeException e){
+            throw new RuntimeException("Error deleting id " + id);
+        }
+
+    }
 }
