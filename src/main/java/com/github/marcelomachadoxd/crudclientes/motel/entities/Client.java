@@ -1,28 +1,43 @@
 package com.github.marcelomachadoxd.crudclientes.motel.entities;
 
 
+import javax.persistence.*;
+import java.io.Serializable;
 import java.time.Instant;
 import java.util.Objects;
 
-public class Client {
+@Entity
+@Table(name = "tb_client")
+public class Client implements Serializable {
+    private static final long serialVersionUID = 1L;
 
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String name;
     private String cpf;
     private Double income;
-    private Instant birtDate;
+    private Instant birthDate;
     private Integer children;
 
 
     public Client() {
     }
 
+    @Column(columnDefinition = "TIMESTAMP WITHOUT TIME ZONE")
+    private Instant createdAt;
+
+    @Column(columnDefinition = "TIMESTAMP WITHOUT TIME ZONE")
+    private Instant updatedAt;
+
+
     public Client(Long id, String name, String cpf, Double income, Instant birtDate, Integer children) {
         this.id = id;
         this.name = name;
         this.cpf = cpf;
         this.income = income;
-        this.birtDate = birtDate;
+        this.birthDate = birtDate;
         this.children = children;
     }
 
@@ -59,11 +74,11 @@ public class Client {
     }
 
     public Instant getBirtDate() {
-        return birtDate;
+        return birthDate;
     }
 
     public void setBirtDate(Instant birtDate) {
-        this.birtDate = birtDate;
+        this.birthDate = birtDate;
     }
 
     public Integer getChildren() {
@@ -73,6 +88,16 @@ public class Client {
     public void setChildren(Integer children) {
         this.children = children;
     }
+
+
+    public Instant getCreatedAt() {
+        return createdAt;
+    }
+
+    public Instant getUpdatedAt() {
+        return updatedAt;
+    }
+
 
     @Override
     public boolean equals(Object o) {
@@ -95,9 +120,19 @@ public class Client {
             ", name='" + name + '\'' +
             ", cpf='" + cpf + '\'' +
             ", income=" + income +
-            ", birtDate=" + birtDate +
+            ", birtDate=" + birthDate +
             ", children=" + children +
             '}';
+    }
+
+    @PrePersist
+    public void prePersist() {
+        createdAt = Instant.now();
+    }
+
+    @PreUpdate
+    public void preUpdate() {
+        updatedAt = Instant.now();
     }
 
 
