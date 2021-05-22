@@ -61,6 +61,14 @@ public class ClientResource {
     }
 
 
+    @PutMapping(value = "/{id}")
+    public ResponseEntity<ClientDTO> updateCategory(@PathVariable Long id, @RequestBody ClientDTO clientDTO){
+        clientDTO = clientService.update(id, clientDTO);
+
+        return ResponseEntity.ok().body(clientDTO);
+    }
+
+
 
 
 }

@@ -53,6 +53,19 @@ public class ClientService {
         return new ClientDTO(client);
     }
 
+    @Transactional(readOnly = false)
+    public ClientDTO update(Long id, ClientDTO clientDTO) {
+        try {
+            Client client = clientRepository.getOne(id);
+
+            copyDTOtoEntity(clientDTO, client);
+
+            return new ClientDTO(client);
+        } catch (RuntimeException e){
+            throw new RuntimeException("Not found id " + clientDTO.getId());
+        }
+
+    }
 
     private void copyDTOtoEntity(ClientDTO clientDTO, Client client){
         client.setName(clientDTO.getName());
