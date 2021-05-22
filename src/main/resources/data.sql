@@ -1,1 +1,14 @@
-INSERT INTO tb_client (name, cpf, income, children, birth_date) VALUES ('Alexander Gran Bell', '12585269354', 3524.44, 2, TIMESTAMP WITH TIME ZONE '1920-07-13T20:50:07.12345Z' );
+INSERT INTO tb_client (name, cpf, income, children, birth_date) VALUES ('Alexander Gran Bell', '12585269354', 3584.44, 2, TIMESTAMP WITH TIME ZONE '1920-07-13T20:50:07.12345Z' );
+INSERT INTO tb_client (name, cpf, income, children, birth_date) VALUES ('Thomas Edson', '15282369314', 3394.44, 3, TIMESTAMP WITH TIME ZONE '1920-07-13T20:50:07.12345Z' );
+INSERT INTO tb_client (name, cpf, income, children, birth_date) VALUES ('Albert Einstein', '12565236301', 3025.44, 1, TIMESTAMP WITH TIME ZONE '1920-07-13T20:50:07.12345Z' );
+INSERT INTO tb_client (name, cpf, income, children, birth_date) VALUES ('Ibere Thenorio', '12585269354', 3975.44, 0, TIMESTAMP WITH TIME ZONE '1920-07-13T20:50:07.12345Z' );
+INSERT INTO tb_client (name, cpf, income, children, birth_date) VALUES ('Elon Musk', '12585269354', 3034.44, 5, TIMESTAMP WITH TIME ZONE '1920-07-13T20:50:07.12345Z' );
+INSERT INTO tb_client (name, cpf, income, children, birth_date) VALUES ('Linus Trovalds', '12585269354', 3985.44, 4, TIMESTAMP WITH TIME ZONE '1920-07-13T20:50:07.12345Z' );
+INSERT INTO tb_client (name, cpf, income, children, birth_date) VALUES ('Steve Jobs', '12585269354', 30241.44, 3, TIMESTAMP WITH TIME ZONE '1920-07-13T20:50:07.12345Z' );
+INSERT INTO tb_client (name, cpf, income, children, birth_date) VALUES ('Bill Gates', '12585269354', 3368.44, 2, TIMESTAMP WITH TIME ZONE '1920-07-13T20:50:07.12345Z' );
+INSERT INTO tb_client (name, cpf, income, children, birth_date) VALUES ('Marie Cure', '12585269354', 36545.44, 1, TIMESTAMP WITH TIME ZONE '1920-07-13T20:50:07.12345Z' );
+INSERT INTO tb_client (name, cpf, income, children, birth_date) VALUES ('Alan turing', '12585269354', 3037.44, 6, TIMESTAMP WITH TIME ZONE '1920-07-13T20:50:07.12345Z' );
+INSERT INTO tb_client (name, cpf, income, children, birth_date) VALUES ('Stephen Hawking', '12585269354', 39875.44, 0, TIMESTAMP WITH TIME ZONE '1920-07-13T20:50:07.12345Z' );
+INSERT INTO tb_client (name, cpf, income, children, birth_date) VALUES ('Dr Emmett Brown', '12585269354', 3024.44, 3, TIMESTAMP WITH TIME ZONE '1920-07-13T20:50:07.12345Z' );
+INSERT INTO tb_client (name, cpf, income, children, birth_date) VALUES ('Ada Lovelace', '12585269354', 3996.44, 1, TIMESTAMP WITH TIME ZONE '1920-07-13T20:50:07.12345Z' );
+INSERT INTO tb_client (name, cpf, income, children, birth_date) VALUES ('Dr Who', '12585269354', 0.0, 0, TIMESTAMP WITH TIME ZONE '1-01-13T20:50:07.12345Z' );
