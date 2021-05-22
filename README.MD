@@ -24,7 +24,7 @@
 <a href="https://www.linkedin.com/in/marcelomachado1987/">
  <img style="border-radius: 50%;" src="https://media-exp1.licdn.com/dms/image/C4E03AQEwV54JjLc-9g/profile-displayphoto-shrink_800_800/0/1621682542460?e=1626912000&v=beta&t=Ctis1Z8wFBsNtnuMhTXGp7cXWA12JyY5t9KF9rfQf58" width="100px;" alt=""/>
  <br />
-Feito por <b>Marcelo Machado</b></a>
+<b>Marcelo Machado</b></a>
  <br />
 
 ---
