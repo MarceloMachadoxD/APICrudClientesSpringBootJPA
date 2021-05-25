@@ -27,9 +27,9 @@ public class ClientService {
 
         try {
             Optional<Client> obj = clientRepository.findById(id);
-            Client client = obj.orElseThrow(() -> new ResourceNotFoundException("Entity not found with id: " + id));
+            Client client = obj.orElseThrow(() -> new EntityNotFoundException("Entity not found with id: " + id));
             return new ClientDTO(client);
-        } catch (RuntimeException e){
+        } catch (EntityNotFoundException e){
             throw new ResourceNotFoundException("id not found " + id);
         }
 
